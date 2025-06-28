@@ -1,0 +1,20 @@
+
+:root{
+    --cor_principal: #000000;
+    --cor_secundaria: #ffffff;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: var(--cor_principal);
+}
+
+h1{
+    color: var(--cor_secundaria);
+}
