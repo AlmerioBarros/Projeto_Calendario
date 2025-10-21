@@ -1,6 +1,6 @@
 
 export function DataHora(){
-    const data_hora = document.getElementById('horario')
-    data_hora.innerHTML = 'dia 01';
+    const data_hora = document.getElementById('')
+    data_hora.innerHTML = '';
 
 }

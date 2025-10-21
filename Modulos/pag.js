@@ -7,7 +7,9 @@ function CriarCalendairo(){
     let date = new Date();
 
     let dataAtual = date.toLocaleDateString('pt-br', { year: 'numeric', month: 'long', day: 'numeric'})
+
+    return dataAtual;
 }
 
 //CriarCalendairo();
-DataHora()
+//DataHora()
