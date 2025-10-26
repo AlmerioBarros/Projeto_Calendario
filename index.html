@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendário dos amigos</title>
+
     <link rel="stylesheet" href="./Estilos/style.css">
+
+    <script type="module" src="Modulos/Pre_pagina/Pre_pag.js"></script>
 </head>
 <body>
 
@@ -15,22 +18,21 @@
 
     <main>
             <nav>
-                <h1>&lt</h1>
-                <h1>Mes</h1>
-                <h1>&gt</h1>
+                <h1 id="mes_anterior">&lt</h1>
+                <h1 id="mes_atual">Mes</h1>
+                <h1 id="mes_proximo">&gt</h1>
             </nav>
 
         <article>
 
             <div id="calendario">
-                    <div class="day-of-week">Dom</div>
-                    <div class="day-of-week">Seg</div>
-                    <div class="day-of-week">Ter</div>
-                    <div class="day-of-week">Qua</div>
-                    <div class="day-of-week">Qui</div>
-                    <div class="day-of-week">Sex</div>
-                    <div class="day-of-week">Sáb</div>
-                </div>
+                <div class="day-of-week">Dom</div>
+                <div class="day-of-week">Seg</div>
+                <div class="day-of-week">Ter</div>
+                <div class="day-of-week">Qua</div>
+                <div class="day-of-week">Qui</div>
+                <div class="day-of-week">Sex</div>
+                <div class="day-of-week">Sáb</div>
             </div>
 
         </article>
@@ -46,7 +48,7 @@
 
     </footer>
 
-    <script type="module" src="./Modulos/pag.js"></script>
+    <script type="module" src="./Modulos/Pos_pagina/Pos_pag.js"></script>
 
 </body>
 </html>
