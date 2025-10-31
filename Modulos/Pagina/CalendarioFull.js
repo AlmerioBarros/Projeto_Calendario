@@ -40,7 +40,7 @@ function CriarCalendario(ano, mes){
     let quant_dias_mes_anterior = ultimo_dia_mes_anterior.getDate()               // <--- O ULTIMO DIA DO MES, UTILIZADO PARA CRIAR OS DIAS DO MES PASSADO, OS INACESSIVEIS
 
     for (let i = 1; i < dia_da_semana_inicial +1 ; i++) {
-        calendario_doc.innerHTML += ` <div class="day-of-week">${quant_dias_mes_anterior}</div> `
+        calendario_doc.innerHTML += ` <div class="day-of-week desativada">${quant_dias_mes_anterior - (dia_da_semana_inicial- i)}</div> `
         
     }
 

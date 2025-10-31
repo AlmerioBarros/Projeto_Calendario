@@ -12,4 +12,4 @@ function PrePag(){
     CalendarioFull(ano, mes, dia)   //FUNÇÃO QUE GERA TUDO SOBRE O CALENDARIO PRE-CARREGAMENTO DA PAGINA
 }
 
-PrePag()
+//PrePag()
