@@ -33,9 +33,19 @@ function CriarCalendario(ano, mes){
                 <div class="day-of-week">Sex</div>
                 <div class="day-of-week">Sáb</div>
     `
+    let primeiro_dia = new Date(ano, mes, 1);               // <--- O DIA 1 DESSE MÊS
+    let dia_da_semana_inicial = primeiro_dia.getDay();      // 0 (Dom) a 6 (Sáb)
 
-    let ultimo_dia = new Date(ano, mes + 1, 0)
-    let quant_dias_mes = ultimo_dia.getDate()
+    let ultimo_dia_mes_anterior = new Date(ano, mes, 0)                           //  PEGA A DATA DO ULTIMO DIA DO MES PASSADO
+    let quant_dias_mes_anterior = ultimo_dia_mes_anterior.getDate()               // <--- O ULTIMO DIA DO MES, UTILIZADO PARA CRIAR OS DIAS DO MES PASSADO, OS INACESSIVEIS
+
+    for (let i = 1; i < dia_da_semana_inicial +1 ; i++) {
+        calendario_doc.innerHTML += ` <div class="day-of-week">${quant_dias_mes_anterior}</div> `
+        
+    }
+
+    let ultimo_dia = new Date(ano, mes + 1, 0)              //  PEGA A DATA DO ULTIMO DIA DESSE MES
+    let quant_dias_mes = ultimo_dia.getDate()               // <--- O ULTIMO DIA DO MES UTILIZADO PARA CRIAR O CALENDARIO
 
     for (let i = 1; i < quant_dias_mes + 1; i++) {
         calendario_doc.innerHTML += ` <div class="day-of-week">${i}</div> `
